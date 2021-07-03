@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odev 2 - Zhanara Kolbaeva</title>
+    <style>
+        
+        .bold {
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="filter-input-wrapper">
+        <button onclick="fetchData()">Getir</button> 
+        <br> 
+        <input type="checkbox" class="check" id="isAdult">
+        <label for="adults">Reşit kullanıcılar</label>
+
+        <input type="checkbox" class="check" id="isActive">
+        <label for="active">Aktif kullanıcılar</label><br>
+        
+        <label for="name">İsimleri ilk harfe göre filtreleme</label>
+        <input type="text" id="name" placeholder="İsimin ilk harfi" maxlength="1" style="text-transform: capitalize;"><br>
+        
+    </div>
+    <div class="wrapper">
+        
+
+        
+        <!--Todo-->
+        <button onclick="test()" id="filterButton" style="display: none;">Filtrele</button>
+        <ul class="list">
+            
+        </ul>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
